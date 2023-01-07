@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(82, 109, 189);
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 50px;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+#inputcontainer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#inputcontainer input{
+    width: 44%;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: white;
+}
+#inputcontainer i{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    font-size: 24px;
+    background-color: white;
+}
+#inputcontainer i:hover{
+    background-color: black;
+    color: white;
+}
+.taskaddedcontainer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.taskaddedcontainer .taskadded{
+    width: 40%;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 10px;
+    display: flex;
+    background-color: white;
+    
+}
+.taskaddedcontainer .taskadded input{
+    font-size: 20px;
+    padding: 5px 15px;
+    background-color: white;
+    border-style: none;
+    width: 95%;
+}
+.taskaddedcontainer .taskadded input:hover{
+    cursor: pointer;
+}
+.taskaddedcontainer .taskadded .check{
+    height: 18px;
+    width: 18px;
+    margin: auto 8px;
+}
+.taskaddedcontainer .deletebtn{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    font-size: 24px;
+    background-color:white;
+    color: red;
+}
+.taskaddedcontainer .deletebtn:hover{
+    background-color: red;
+    color: black;
+}
+.taskaddedcontainer .checkbtn{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    font-size: 24px;
+    background-color:white;
+    color:green;
+}
+.taskaddedcontainer .checkbtn:hover{
+    color: black;
+    background-color: green;
+}
+.footer{
+    margin: 0 auto;
+    position: absolute;
+    bottom: 15px;
+    color: white;
+    left: 40%;
+}
+@media(max-width:850px){
+    #inputcontainer input{
+        width:79%;
+        font-size: 18px;
+    }
+    .taskaddedcontainer .taskadded{
+        width: 70%;
+        font-size: 16px;
+    }
+    .footer{
+        left: 35%;
+        font-size: 15px;
+    }
+}
